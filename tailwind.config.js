@@ -7,7 +7,7 @@ module.exports = {
         customDarkPurple: "#06032C",
         customLightPink: "#EADAFF",
         customLightPurple: "#7C77B3",
-        customLightGreen: "#7C77B3",
+        customAccent: "#27A68E",
       },
       fontFamily: {
         bebasNeue: ["Bebas Neue"],
