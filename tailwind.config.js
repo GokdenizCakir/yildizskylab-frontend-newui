@@ -9,6 +9,9 @@ module.exports = {
         customLightPurple: "#7C77B3",
         customLightGreen: "#7C77B3",
       },
+      fontFamily: {
+        bebasNeue: ["Bebas Neue"],
+      },
     },
   },
   plugins: [],

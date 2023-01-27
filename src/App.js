@@ -1,10 +1,16 @@
+import LandingPage from "./pages/LandingPage";
+import Teams from "./pages/Teams";
+import Nav from "./pages/Nav";
+
 function App() {
   return (
-  <div className="bg-customDarkPurple h-screen">
-    <nav className="bg-white h-48 ">
-      
-    </nav>
-  </div>
+    <div className="App">
+      <div className=" font-bebasNeue bg-customDarkPurple">
+        <Nav />
+        <LandingPage />
+        <Teams />
+      </div>
+    </div>
   );
 }
 
