@@ -5,9 +5,9 @@ import Nav from './pages/Nav';
 function App() {
 	return (
 		<div className='App'>
-			<div className='font-bebasNeue bg-customDarkPurple flex flex-row justify-center'>
+			<div className='font-bebasNeue bg-customDarkPurple flex flex-row justify-center text-customLightPink tracking-[0.16em]'>
 				<Nav />
-				<div className='mt-36 flex flex-col justify-center w-full'>
+				<div className='flex flex-col justify-center w-full'>
 					<LandingPage />
 					<Teams />
 				</div>

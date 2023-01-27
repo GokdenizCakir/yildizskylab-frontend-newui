@@ -1,32 +1,38 @@
 import React from 'react';
+import Logo from '../assets/SkylabPinkLogo.png';
 
 const Nav = () => {
 	return (
-		<div className='h-36 w-full bg-white fixed top-0 flex flex-row items-center justify-between'>
-			<div className='flex items-center flex-row'>
-				<div className='w-12 h-12'>
-					<img src='../assets/4_5953887805510782338.png' alt='' />
+		<div className='h-36 w-full fixed top-0 flex flex-row items-center justify-between container '>
+			<div className='flex items-center flex-row space-x-6'>
+				<div className='w-10 h-10'>
+					<img src={Logo} alt='' />
+					{/* <Logo /> */}
 				</div>
-				<div className='w-2 h-2 rounded-full bg-black'></div>
+				<div className='w-2 h-2 rounded-full bg-customLightPink'>
+					{/* <Logo /> */}
+				</div>
 				<div className=''>
-					<span className='font-bebasNeue'>Sky Lab</span>
+					<span className='font-bebasNeue text-5xl tracking-[0.3em] font-light'>
+						Sky Lab
+					</span>
 				</div>
 			</div>
-			<ul className='flex flex-row space-x-12'>
+			<ul className='flex flex-row space-x-12 text-lg tracking-[0.16em]'>
 				<li>
-					<span>Anasayfa</span>
+					<span>ANASAYFA</span>
 				</li>
 				<li>
-					<span>Ekipler</span>
+					<span>EKİPLER</span>
 				</li>
 				<li>
-					<span>Etkinlikler</span>
+					<span>ETKİNLİKLER</span>
 				</li>
 				<li>
-					<span>İletişim</span>
+					<span>İLETİŞİM</span>
 				</li>
-				<li>
-					<span>Kayıt Ol/Giriş Yap</span>
+				<li className='text-customAccent'>
+					<span>KAYIT OL/GİRİŞ YAP</span>
 				</li>
 			</ul>
 		</div>
