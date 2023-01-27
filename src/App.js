@@ -1,6 +1,8 @@
 import LandingPage from "./pages/LandingPage";
 import Teams from "./pages/Teams";
 import Nav from "./pages/Nav";
+import Contact from "./pages/Contact";
+import Events from "./pages/Events";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
         <div className="flex flex-col justify-center w-full">
           <LandingPage />
           <Teams />
+          <Events />
+          <Contact />
         </div>
       </div>
     </div>
