@@ -29,10 +29,10 @@ const Teams = () => {
         </div>
       </div>
       <div>
-        <div className="flex justify-center space-x-6">
+        <div className="flex justify-center space-x-12">
           {(teamSelect ? teams.arge : teams.social).map((team, index) => {
             return (
-              <>
+              <div className="flex flex-col justify-between items-center space-y-8">
                 <div
                   className={`w-[5.2rem] h-[5.2rem] flex justify-center items-center outline-customAccent ${
                     argeSelected === index ? "outline-8 outline" : null
@@ -42,11 +42,14 @@ const Teams = () => {
                     onClick={() => setArgeSelected(index)}
                     src={require("../assets/" + team.logo)}
                     className="object-cover"
+                    alt="logo"
                     key={index}
                   />
                 </div>
-                <div className="text-white">{teams.name}</div>
-              </>
+                <div className="text-customLightPink text-end w-12 -rotate-45 ">
+                  {team.name}
+                </div>
+              </div>
             );
           })}
         </div>
