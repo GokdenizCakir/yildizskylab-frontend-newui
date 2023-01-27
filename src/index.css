@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .rotatedTeamNames {
-  @apply text-white;
+	@apply text-white;
+}
+
+body {
+	@apply bg-customDarkPurple;
 }
