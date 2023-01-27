@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import teams from "./../data/teams.json";
 
 const Teams = () => {
   const [teamSelect, setTeamSelect] = useState(true);
 
   return (
-    <section className="h-screen pt-48 bg-customDarkPurple white">
-      <div className=" text-customLightPink text-xl mt-5 flex justify-center">
+    <section className="h-screen pt-36 bg-customDarkPurple white">
+      <div className=" text-customLightPink text-2xl my-12 flex justify-center">
         <div className="flex justify-between w-auto items-center">
           <div
             onClick={() => setTeamSelect(true)}
@@ -24,6 +25,16 @@ const Teams = () => {
             SOSYAL EKİPLER
           </div>
         </div>
+      </div>
+      <div className="w-auto mx-36">
+        <div>
+          {teams.map((team, index) => {
+            return(
+              <div></div>
+            )
+          })}
+        </div>
+        <div></div>
       </div>
     </section>
   );
