@@ -4,7 +4,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
-    GSM: '',
+    GSM: "",
     message: "",
   });
 
@@ -25,7 +25,7 @@ const Contact = () => {
     setFormData({
       fullname: "",
       email: "",
-      GSM: '',
+      GSM: "",
       message: "",
     });
   };

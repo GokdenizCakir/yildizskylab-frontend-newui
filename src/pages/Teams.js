@@ -49,8 +49,8 @@ const Teams = () => {
                   className="flex flex-col justify-between items-center space-y-8"
                 >
                   <div
-                    className={`w-[5.2rem] h-[5.2rem] flex justify-center items-center -outline-offset-1 outline-customAccent ${
-                      teamIndex === index ? "outline-8 outline" : null
+                    className={`w-[5.2rem] h-[5.2rem] flex justify-center items-center ring-customAccent ${
+                      teamIndex === index ? "ring-8" : null
                     } p-2 cursor-pointer bg-customLightPink overflow-hidden rounded-[50%]`}
                   >
                     <img
