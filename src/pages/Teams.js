@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import teams from "./../data/teams.json";
+import DownArrow from "../components/DownArrow";
 
 const Teams = () => {
   const [teamSelect, setTeamSelect] = useState("arge");
@@ -7,7 +8,7 @@ const Teams = () => {
   const [selectedTeam, setSelectedTeam] = useState("algolab");
 
   return (
-    <section className="h-screen pt-36 bg-customDarkPurple white">
+    <section className="h-screen relative pt-36 bg-customDarkPurple white">
       <div className=" text-customLightPink text-2xl my-16 flex justify-center">
         <div className="flex justify-between w-auto items-center">
           <div
@@ -62,7 +63,7 @@ const Teams = () => {
                       alt="logo"
                     />
                   </div>
-                  <div className="text-customLightPink text-end w-12 -rotate-45 ">
+                  <div className="text-customLightPink text-lg text-end w-12 -rotate-45 ">
                     {team.name}
                   </div>
                 </div>
@@ -79,6 +80,7 @@ const Teams = () => {
           </div>
         </div>
       </div>
+      <DownArrow />
     </section>
   );
 };

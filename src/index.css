@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .rotatedTeamNames {
-	@apply text-white;
+  @apply text-white;
 }
 
 body {
-	@apply bg-customDarkPurple;
+  @apply bg-customDarkPurple;
+}
+
+input[type="text"] {
+  @apply appearance-none outline-none bg-customDarkPurple border-b-2 border-customLightPurple pb-4 text-lg px-10;
 }
