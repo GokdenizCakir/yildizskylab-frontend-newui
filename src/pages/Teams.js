@@ -5,6 +5,7 @@ import teams from "./../data/teams.json";
 const Teams = () => {
   const [teamSelect, setTeamSelect] = useState(true);
   const [argeSelected, setArgeSelected] = useState(0);
+  const [selectedTeam, setSelectedTeam] = useState('algolab');
 
   return (
     <section className="h-screen pt-36 bg-customDarkPurple white">
@@ -12,7 +13,7 @@ const Teams = () => {
         <div className="flex justify-between w-auto items-center">
           <div
             onClick={() => setTeamSelect(true)}
-            className={`px-3 pt-[0.2rem] pb-[0.1rem] cursor-pointer leading-tight  ${
+            className={`px-3 pt-[0.2rem] pb-[0.1rem] cursor-pointer leading-tight ${
               teamSelect ? "bg-customAccent" : "bg-customDarkPurple"
             } `}
           >
@@ -34,7 +35,7 @@ const Teams = () => {
             return (
               <div className="flex flex-col justify-between items-center space-y-8">
                 <div
-                  className={`w-[5.2rem] h-[5.2rem] flex justify-center items-center outline-customAccent ${
+                  className={`w-[5.2rem] h-[5.2rem] flex justify-center items-center -outline-offset-1 outline-customAccent ${
                     argeSelected === index ? "outline-8 outline" : null
                   } p-2 cursor-pointer bg-customLightPink overflow-hidden rounded-[50%]`}
                 >
@@ -52,6 +53,9 @@ const Teams = () => {
               </div>
             );
           })}
+        </div>
+        <div className="w-screen flex justify-center">
+          {}
         </div>
       </div>
     </section>

@@ -45,23 +45,28 @@
   "social": [
     {
       "name": "organizasyon",
-      "logo": "SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png",
+      "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
     },
     {
       "name": "sosyal sorumluluk",
-      "logo": "SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png",
+      "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
     },
     {
       "name": "skymedia",
-      "logo": "SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png",
+      "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
     },
     {
       "name": "gecekodu ekibi",
-      "logo": "SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png",
+      "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
     },
     {
       "name": "socilab",
-      "logo": "SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png",
+      "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
     }
   ]
 }
