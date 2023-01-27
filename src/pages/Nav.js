@@ -6,13 +6,10 @@ const Nav = () => {
 		<div className='h-36 w-full fixed top-0 flex flex-row items-center justify-between container '>
 			<div className='flex items-center flex-row space-x-6'>
 				<div className='w-10 h-10'>
-					<img src={Logo} alt='' />
-					{/* <Logo /> */}
+					<img src={Logo} alt='Logo' />
 				</div>
-				<div className='w-2 h-2 rounded-full bg-customLightPink'>
-					{/* <Logo /> */}
-				</div>
-				<div className=''>
+				<div className='w-2 h-2 rounded-full bg-customLightPink'></div>
+				<div className='pt-1'>
 					<span className='font-bebasNeue text-5xl tracking-[0.3em] font-light'>
 						Sky Lab
 					</span>
