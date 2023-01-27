@@ -1,37 +1,67 @@
-[
-  {
-    "algolab": {
+{
+  "arge": [
+    {
+      "name": "algolab",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     },
-    "airlab": {
+    {
+      "name": "airlab",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     },
-    "chainlab": {
+    {
+      "name": "chainlab",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     },
-    "gamelab": {
+    {
+      "name": "gamelab",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     },
-    "mobilab": {
+    {
+      "name": "mobilab",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     },
-    "skysis": {
+    {
+      "name": "skysis",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     },
-    "skysec": {
+    {
+      "name": "skysec",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     },
-    "weblab": {
+    {
+      "name": "weblab",
       "details": "Başta C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-      "logo": "assets/SkylabPinkLogo.png"
+      "logo": "SkylabPinkLogo.png"
     }
+  ],
 
-  }
-]
+  "social": [
+    {
+      "name": "organizasyon",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "sosyal sorumluluk",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "skymedia",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "gecekodu ekibi",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "socilab",
+      "logo": "SkylabPinkLogo.png"
+    }
+  ]
+}
