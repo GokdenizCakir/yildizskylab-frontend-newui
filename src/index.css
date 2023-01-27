@@ -10,6 +10,12 @@ body {
   @apply bg-customDarkPurple;
 }
 
-input[type="text"] {
-  @apply appearance-none outline-none bg-customDarkPurple border-b-2 border-customLightPurple pb-4 text-lg px-10;
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  @apply appearance-none outline-none w-full bg-customDarkPurple border-b-2 text-customLightPink border-customLightPurple py-2  text-lg px-10 placeholder:text-lg placeholder:text-customLightPurple;
+}
+
+textarea {
+  @apply appearance-none outline-none resize-none w-full bg-customLightPurple text-customDarkPurple py-6 px-10 text-lg placeholder:text-lg placeholder:text-customDarkPurple;
 }
