@@ -59,7 +59,7 @@ const Teams = () => {
 												setSelectedTeam(team.name);
 											}}
 											src={require('../assets/' + team.logo)}
-											className='object-cover'
+											className='object-cover w-14'
 											alt='logo'
 										/>
 									</div>
