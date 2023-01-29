@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import teams from './../data/teams.json';
 import DownArrow from '../components/DownArrow';
 
@@ -8,7 +8,7 @@ const Teams = () => {
 	const [selectedTeam, setSelectedTeam] = useState('algolab');
 
 	return (
-		<section className='h-screen relative pt-36 bg-customDarkPurple '>
+		<section className='h-screen snap-start relative pt-36 bg-customDarkPurple white'>
 			<div className=' text-customLightPink text-2xl my-16 flex justify-center'>
 				<div className='flex justify-between w-auto items-center'>
 					<div

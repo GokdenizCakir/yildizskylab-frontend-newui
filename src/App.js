@@ -7,9 +7,9 @@ import Events from './pages/Events';
 function App() {
 	return (
 		<div className='App'>
-			<div className='font-bebasNeue bg-customDarkPurple flex flex-row justify-center text-customLightPink tracking-[0.16em] '>
+			<div className='font-bebasNeue bg-customDarkPurple flex flex-row justify-center text-customLightPink tracking-[0.16em]'>
 				<Nav />
-				<div className='flex flex-col justify-center w-full '>
+				<div className=' h-screen overflow-y-scroll snap-mandatory snap-y justify-center w-full'>
 					<LandingPage />
 					<Teams />
 					<Events />

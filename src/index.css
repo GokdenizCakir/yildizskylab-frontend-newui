@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.rotatedTeamNames {
-  @apply text-white;
-}
-
 body {
   @apply bg-customDarkPurple;
 }
@@ -19,3 +15,4 @@ input[type="tel"] {
 textarea {
   @apply appearance-none outline-none resize-none w-full bg-customLightPurple text-customDarkPurple py-6 px-10 text-lg placeholder:text-lg placeholder:text-customDarkPurple;
 }
+
