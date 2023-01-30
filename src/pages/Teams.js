@@ -1,14 +1,32 @@
-import React, { useState } from 'react';
+import React, {
+	forwardRef,
+	useImperativeHandle,
+	useRef,
+	useState,
+} from 'react';
 import teams from './../data/teams.json';
 import DownArrow from '../components/DownArrow';
 
-const Teams = () => {
+const Teams = forwardRef(function Teams(props, ref) {
+	const pageRef = useRef(null);
+
+	useImperativeHandle(ref, () => {
+		return {
+			scrollIntoView() {
+				pageRef.current.scrollIntoView();
+			},
+		};
+	});
+
 	const [teamSelect, setTeamSelect] = useState('arge');
 	const [teamIndex, setTeamIndex] = useState(0);
 	const [selectedTeam, setSelectedTeam] = useState('algolab');
 
 	return (
-		<section className='h-screen snap-start relative pt-36 bg-customDarkPurple white'>
+		<section
+			className='h-screen snap-start relative pt-36 bg-customDarkPurple white'
+			ref={pageRef}
+		>
 			<div className=' text-customLightPink text-2xl my-16 flex justify-center'>
 				<div className='flex justify-between w-auto items-center'>
 					<div
@@ -59,7 +77,7 @@ const Teams = () => {
 												setSelectedTeam(team.name);
 											}}
 											src={require('../assets/' + team.logo)}
-											className='object-cover w-14'
+											className='object-cover w-[3.2rem] hue-rotate-[320deg] brightness-[0.2]'
 											alt='logo'
 										/>
 									</div>
@@ -80,6 +98,6 @@ const Teams = () => {
 			<DownArrow />
 		</section>
 	);
-};
+});
 
 export default Teams;

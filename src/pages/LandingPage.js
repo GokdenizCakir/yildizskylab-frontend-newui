@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { forwardRef, useImperativeHandle, useRef } from 'react';
 
-const LandingPage = () => {
+const LandingPage = forwardRef(function LandingPage(props, ref) {
+	const pageRef = useRef(null);
+	useImperativeHandle(ref, () => {
+		return {
+			scrollIntoView() {
+				pageRef.current.scrollIntoView();
+			},
+		};
+	});
+
 	return (
-		<div className='h-screen snap-start pt-36 bg-landing-page bg-cover bg-[0%] flex justify-center items-center'>
+		<div
+			className='h-screen snap-start pt-36 bg-landing-page bg-cover bg-[0%] flex justify-center items-center'
+			ref={pageRef}
+		>
 			<div className='flex flex-row '>
 				{/* <div className='w-[1000px] bg-customLightPink h-[400px]'></div> */}
 				<div className='flex flex-col items-center justify-center -mb-28 space-y-5 w-[calc(100vw-5vw)]'>
@@ -18,6 +30,6 @@ const LandingPage = () => {
 			<div className=''></div>
 		</div>
 	);
-};
+});
 
 export default LandingPage;

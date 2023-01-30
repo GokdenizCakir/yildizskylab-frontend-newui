@@ -1,7 +1,14 @@
 import React from 'react';
 import Logo from '../assets/SkylabPinkLogo.png';
+import scrollIntoView from 'scroll-into-view';
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
 
-const Nav = () => {
+const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
+	const handleScroll = ref => {
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	};
+
 	return (
 		<div className='h-36 w-full fixed top-0 flex flex-row items-center justify-between container z-50'>
 			<div className='flex items-center flex-row space-x-6'>
@@ -17,16 +24,16 @@ const Nav = () => {
 			</div>
 			<ul className='flex flex-row space-x-12 text-lg tracking-[0.16em]'>
 				<li>
-					<span>ANASAYFA</span>
+					<button onClick={() => handleScroll(landingRef)}>ANASAYFA</button>
 				</li>
 				<li>
-					<span>EKİPLER</span>
+					<button onClick={() => handleScroll(teamsRef)}>EKİPLER</button>
 				</li>
 				<li>
-					<span>ETKİNLİKLER</span>
+					<button onClick={() => handleScroll(eventsRef)}>ETKİNLİKLER</button>
 				</li>
 				<li>
-					<span>İLETİŞİM</span>
+					<button onClick={() => handleScroll(contactRef)}>İLETİŞİM</button>
 				</li>
 				<li className='text-customAccent'>
 					<span>KAYIT OL/GİRİŞ YAP</span>
