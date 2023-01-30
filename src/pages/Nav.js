@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../assets/SkylabPinkLogo.png';
-import scrollIntoView from 'scroll-into-view';
 import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 

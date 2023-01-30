@@ -93,7 +93,7 @@ const Events = forwardRef(function Events(props, ref) {
 				})}
 			</div>
 			<div className='h-36'></div>
-			<DownArrow />
+			{/* <DownArrow /> */}
 		</section>
 	);
 });
