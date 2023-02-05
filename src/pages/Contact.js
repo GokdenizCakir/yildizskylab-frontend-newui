@@ -52,7 +52,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 			<div className='flex flex-col items-center mt-4 mx-auto w-[32rem]'>
 				<h1 className='text-6xl'>BİZE ULAŞIN</h1>
 				<form
-					className='w-full font-inter font-medium pt-12'
+					className='w-full font-inter font-normal pt-12'
 					onSubmit={handleSubmit}
 				>
 					<input
@@ -90,10 +90,10 @@ const Contact = forwardRef(function Contact(props, ref) {
 						className='mt-9'
 					></textarea>
 					<button
-						className='appearance-none outline-none font-bebasNeue  w-full pb-[0.8rem] pt-4 mt-2 lg:hover:bg-[#f4ecff] bg-customLightPink text-customDarkPurple '
+						className='appearance-none outline-none font-bebasNeue text-xl tracking-widest  w-full pb-[0.8rem] pt-4 mt-2 lg:hover:bg-[#f4ecff] bg-customLightPink text-customDarkPurple '
 						type='submit'
 					>
-						G Ö N D E R
+						GÖNDER
 					</button>
 				</form>
 			</div>
