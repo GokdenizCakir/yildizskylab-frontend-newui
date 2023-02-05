@@ -22,6 +22,7 @@ const Events = forwardRef(function Events(props, ref) {
   });
 
   return (
+    
     <section
       className='snap-start relative bg-customDarkPurple pt-36'
       ref={pageRef}
