@@ -4,17 +4,19 @@ import Logo from './../assets/SkylabPinkLogo.png';
 
 const Loading = ({ loaded }) => {
 	const [progress, setProgress] = useState('w-[0%]');
+	const [duration, setDuration] = useState('duration-[10000ms]');
 	const [visible, setVisible] = useState(true);
 	const [hidden, setHidden] = useState('');
 
 	useEffect(() => {
-		setProgress('w-[90%]');
+		setProgress('w-[95%]');
 	}, []);
 
 	const handleLoad = async () => {
 		if (progress === 'w-[100%]') {
 		}
 		if (loaded) {
+			setDuration('duration-[1800ms]');
 			setProgress('w-[100%]');
 			clearInterval(checkIfLoaded);
 			await new Promise(resolve => setTimeout(resolve, 600));
@@ -37,7 +39,7 @@ const Loading = ({ loaded }) => {
 				</Suspense>
 				<div className='w-full h-1 mt-12 bg-customLightPurple'>
 					<div
-						className={` h-full transition-all ease-out duration-[1500ms] ${progress}  bg-customLightPink`}
+						className={` h-full transition-all ease-out ${duration} ${progress}  bg-customLightPink`}
 					></div>
 				</div>
 			</div>
