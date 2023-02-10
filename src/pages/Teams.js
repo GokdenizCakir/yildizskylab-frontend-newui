@@ -67,15 +67,15 @@ const Teams = forwardRef(function Teams(props, ref) {
                   className='flex flex-col justify-between items-center space-y-8'
                 >
                   <div
+                    onClick={() => {
+                      setTeamIndex(index);
+                      setSelectedTeam(team.name);
+                    }}
                     className={`w-[5.2rem] h-[5.2rem] flex justify-center items-center ring-customAccent ${
                       teamIndex === index ? 'ring-8' : null
                     } p-2 cursor-pointer bg-customLightPink overflow-hidden rounded-[50%]`}
                   >
                     <img
-                      onClick={() => {
-                        setTeamIndex(index);
-                        setSelectedTeam(team.name);
-                      }}
                       src={require('../assets/' + team.logo)}
                       className='object-cover w-[3.2rem] hue-rotate-[320deg] brightness-[0.2]'
                       alt='logo'
@@ -91,7 +91,10 @@ const Teams = forwardRef(function Teams(props, ref) {
         </div>
         <div className='w-screen flex mt-28 justify-center'>
           <div className='font-inter w-1/2 text-center'>
-            {teams[teamSelect].find(team => team.name === selectedTeam).details}
+            {
+              teams[teamSelect].find((team) => team.name === selectedTeam)
+                .details
+            }
           </div>
         </div>
       </div>
