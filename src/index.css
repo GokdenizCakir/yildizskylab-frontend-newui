@@ -9,10 +9,10 @@ body {
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-  @apply appearance-none outline-none w-full bg-customDarkPurple border-b-2 text-customLightPink border-customLightPurple py-2  text-lg px-10 placeholder:text-lg placeholder:text-customLightPurple;
+  @apply appearance-none outline-none w-full bg-customDarkPurple border-b-2 text-customLightPink border-customLightPurple py-2 text-base md:text-lg px-4 lg:px-10 placeholder:text-base placeholder:md:text-lg placeholder:text-customLightPurple;
 }
 
 textarea {
-  @apply appearance-none outline-none resize-none w-full bg-customLightPurple text-customDarkPurple py-6 px-10 text-lg placeholder:text-lg placeholder:text-customDarkPurple;
+  @apply h-[8em] md:h-[10em] appearance-none outline-none resize-none w-full bg-customLightPurple text-customDarkPurple py-4 md:py-6 px-4 lg:px-10 text-lg placeholder:text-base placeholder:md:text-lg placeholder:text-customDarkPurple;
 }
 

@@ -27,7 +27,7 @@ const Teams = forwardRef(function Teams(props, ref) {
 			className='h-screen snap-start relative pt-24 lg:pt-36 bg-customDarkPurple white'
 			ref={pageRef}
 		>
-			<div className=' text-customLightPink text-xl tracking-wide lg:text-2xl my-16 flex justify-center'>
+			<div className=' text-customLightPink text-xl tracking-wide lg:text-2xl my-10 lg:my-16 flex justify-center'>
 				<div className='flex justify-between w-auto items-center'>
 					<div
 						onClick={() => {
@@ -89,7 +89,7 @@ const Teams = forwardRef(function Teams(props, ref) {
 						}
 					)}
 				</div>
-				<div className='w-screen flex mt-8 lg:mt-28 justify-center'>
+				<div className='w-screen text-sm lg:text-md flex mt-10 lg:mt-28 justify-center'>
 					<div className='font-inter w-11/12 lg:w-1/2 text-center'>
 						{teams[teamSelect].find(team => team.name === selectedTeam).details}
 					</div>
