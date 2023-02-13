@@ -24,10 +24,10 @@ const Teams = forwardRef(function Teams(props, ref) {
 
 	return (
 		<section
-			className='h-screen snap-start relative pt-36 bg-customDarkPurple white'
+			className='h-screen snap-start relative pt-24 lg:pt-36 bg-customDarkPurple white'
 			ref={pageRef}
 		>
-			<div className=' text-customLightPink text-2xl my-16 flex justify-center'>
+			<div className=' text-customLightPink text-xl tracking-wide lg:text-2xl my-16 flex justify-center'>
 				<div className='flex justify-between w-auto items-center'>
 					<div
 						onClick={() => {
@@ -58,7 +58,7 @@ const Teams = forwardRef(function Teams(props, ref) {
 				</div>
 			</div>
 			<div>
-				<div className='flex justify-center space-x-12'>
+				<div className='h-54 flex justify-start lg:justify-center pl-10 pt-8 lg:pl-0 w-screen overflow-x-scroll lg:overflow-x-visible space-x-12'>
 					{(teamSelect === 'arge' ? teams.arge : teams.social).map(
 						(team, index) => {
 							return (
@@ -71,7 +71,7 @@ const Teams = forwardRef(function Teams(props, ref) {
 											setTeamIndex(index);
 											setSelectedTeam(team.name);
 										}}
-										className={`w-[5.2rem] h-[5.2rem] flex justify-center items-center ring-customAccent ${
+										className={`w-20 lg:w-[5.2rem] h-20 lg:h-[5.2rem] flex justify-center items-center ring-customAccent ${
 											teamIndex === index ? 'ring-8' : null
 										} p-2 cursor-pointer bg-customLightPink overflow-hidden rounded-[50%]`}
 									>
@@ -89,8 +89,8 @@ const Teams = forwardRef(function Teams(props, ref) {
 						}
 					)}
 				</div>
-				<div className='w-screen flex mt-28 justify-center'>
-					<div className='font-inter w-1/2 text-center'>
+				<div className='w-screen flex mt-8 lg:mt-28 justify-center'>
+					<div className='font-inter w-11/12 lg:w-1/2 text-center'>
 						{teams[teamSelect].find(team => team.name === selectedTeam).details}
 					</div>
 				</div>
