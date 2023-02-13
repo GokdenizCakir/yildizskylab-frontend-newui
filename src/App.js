@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<div className='App'>
-			<div className='font-bebasNeue bg-customDarkPurple flex flex-row justify-center text-customLightPink tracking-[0.16em]'>
+			<div className='font-bebasNeue relative bg-customDarkPurple flex flex-row justify-center text-customLightPink tracking-[0.16em]'>
 				<Nav refs={{ landingRef, teamsRef, eventsRef, contactRef }} />
 				<div className=' h-screen overflow-y-scroll scroll-smooth snap-proximity snap-y justify-center w-full'>
 					<LandingPage ref={landingRef} />
