@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
 import Logo from '../assets/SkylabPinkLogo.png';
 import smoothscroll from 'smoothscroll-polyfill';
+import { menuState } from '../states/atom';
+import { useRecoilState } from 'recoil';
 smoothscroll.polyfill();
 
 const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
-  const [menuOpened, setMenuOpened] = useState(false);
+  const [menuOpened, setMenuOpened] = useRecoilState(menuState);
   const handleScroll = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div
-      className={`${
-        menuOpened ? 'bg-customLightPurple h-screen' : 'h-24 flex'
-      } transition-colors  lg:h-36 w-full fixed top-0 flex-row items-center justify-center lg:justify-between container z-50`}
-    >
-      <div className='absolute w-screen h-24 flex items-center'>
+    <div className=' h-24 flex lg:h-36 w-full fixed top-0 flex-row items-center justify-center lg:justify-between container z-50'>
+      <div className='absolute z-50 w-screen h-24 flex items-center'>
         <div
           onClick={() => setMenuOpened(!menuOpened)}
           className={`${
