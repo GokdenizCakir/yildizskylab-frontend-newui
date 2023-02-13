@@ -25,17 +25,17 @@ const LandingPage = forwardRef(function LandingPage(props, ref) {
 			<img
 				src={require('../assets/landing-page.png')}
 				alt=''
-				className='absolute top-0 left-0 right-0 bottom-0 h-screen w-full'
+				className='absolute top-0 bottom-0 h-screen min-w-[1024px] w-full'
 				onLoad={() => setLoaded(true)}
 			/>
 			<Loading loaded={loaded} />
 			<div className='flex flex-row '>
 				{/* <div className='w-[1000px] bg-customLightPink h-[400px]'></div> */}
-				<div className='flex flex-col items-center justify-center -mb-28 space-y-5 w-[calc(100vw-5vw)]'>
-					<span className='text-[4rem] leading-none z-10'>
+				<div className='flex flex-col text-center items-center justify-center mb-24 lg:-mb-28 space-y-5 w-[calc(100vw-5vw)]'>
+					<span className='text-[2.8rem] lg:text-[4rem] tracking-[0.2em] lg:tracking-wider -mr-3 leading-[3.4rem] lg:leading-none z-10'>
 						YILDIZ TEKNİK ÜNİVERSİTESİ
 					</span>
-					<span className='text-[9rem] leading-none tracking-[0.3em] z-10 -mr-9 text-center text-customDarkPurple'>
+					<span className='text-[4.4rem] lg:text-[9rem] leading-none tracking-[0.3em] z-10 -mr-6 text-center text-customDarkPurple'>
 						SKY LAB
 					</span>
 				</div>
