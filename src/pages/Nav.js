@@ -13,7 +13,7 @@ const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
 
   return (
     <div className=' h-24 flex lg:h-36 w-full fixed top-0 flex-row items-center justify-center lg:justify-between container z-50'>
-      <div className='absolute z-50 w-screen h-24 flex items-center'>
+      <div className='absolute z-40 w-screen h-24 flex items-center'>
         <div
           onClick={() => setMenuOpened(!menuOpened)}
           className={`${
@@ -49,7 +49,7 @@ const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
           </span>
         </div>
       </div>
-      <ul className='hidden lg:flex flex-row space-x-12 text-lg'>
+      <ul className='hidden lg:flex flex-row z-50 space-x-12 text-lg'>
         <li>
           <button
             className='tracking-[0.10em]'

@@ -9,7 +9,7 @@ const Menu = () => {
     <div
       className={`${
         menuOpened ? null : '-translate-x-full'
-      } h-screen w-screen z-40 transition-all duration-300 bg-customLightPurple fixed`}
+      } lg:hidden h-screen w-screen z-40 transition-all duration-300 bg-customLightPurple fixed`}
     >
       <div>Menu</div>
     </div>
