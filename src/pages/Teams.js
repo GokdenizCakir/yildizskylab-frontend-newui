@@ -9,6 +9,7 @@ import DownArrow from '../components/DownArrow';
 
 const Teams = forwardRef(function Teams(props, ref) {
   const pageRef = useRef(null);
+  const teamsRef = useRef(null);
 
   useImperativeHandle(ref, () => {
     return {
@@ -18,8 +19,9 @@ const Teams = forwardRef(function Teams(props, ref) {
     };
   });
 
-  const handleScroll = (event) => {
-    event.target.scrollIntoView({ inline: 'center', behavior: 'smooth' });
+  const handleScroll = (element) => {
+    const horizontal = element.target.offsetLeft - 164;
+    teamsRef.current.scroll(horizontal, 0);
   };
 
   const [teamSelect, setTeamSelect] = useState('arge');
@@ -62,7 +64,10 @@ const Teams = forwardRef(function Teams(props, ref) {
         </div>
       </div>
       <div>
-        <div className='h-[150px] lg:h-50 flex justify-start lg:justify-center pl-[calc(50%-2rem)] pr-[calc(50%-2rem)] lg:pr-0 lg:pl-0 w-screen overflow-x-scroll lg:overflow-x-visible space-x-12'>
+        <div
+          ref={teamsRef}
+          className='h-[150px] lg:h-50 flex justify-start lg:justify-center pl-[calc(50%-2rem)] pr-[calc(50%-2rem)] lg:pr-0 lg:pl-0 w-screen overflow-x-scroll lg:overflow-x-visible space-x-12'
+        >
           {(teamSelect === 'arge' ? teams.arge : teams.social).map(
             (team, index) => {
               return (
@@ -82,6 +87,7 @@ const Teams = forwardRef(function Teams(props, ref) {
                     } p-2 cursor-pointer bg-customLightPink overflow-hidden rounded-[50%]`}
                   >
                     <img
+                      onClick={() => ''}
                       src={require('../assets/' + team.logo)}
                       className='object-cover w-[3.2rem] hue-rotate-[320deg] brightness-[0.2]'
                       alt='logo'
