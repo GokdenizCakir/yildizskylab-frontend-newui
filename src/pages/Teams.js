@@ -34,7 +34,7 @@ const Teams = forwardRef(function Teams(props, ref) {
       ref={pageRef}
     >
       <div className=' text-customLightPink text-xl tracking-wide lg:text-2xl my-10 lg:my-16 flex justify-center'>
-        <div className='flex ml-3 justify-between w-auto items-center'>
+        <div className='flex ml-3 lg:ml-0 justify-between w-auto items-center'>
           <div
             onClick={() => {
               setTeamSelect('arge');
