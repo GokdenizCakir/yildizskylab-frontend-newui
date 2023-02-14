@@ -77,12 +77,12 @@ const Events = forwardRef(function Events(props, ref) {
                   onClick={() => setSelectEvent(index)}
                   className={`${
                     index === selectEvent
-                      ? 'w-[5rem] lg:w-[8.5rem] h-[5rem] lg:h-[8.5rem] -translate-x-[2rem] lg:-translate-x-0 ml-[15%] lg:ml-0 ring-8'
-                      : 'w-10 lg:w-[5rem] h-10 lg:h-[5rem] -translate-x-[0.6rem] ml-[15%] lg:ml-10 lg:mx-10'
+                      ? 'w-[4rem] lg:w-[8.5rem] h-[4rem] lg:h-[8.5rem] -translate-x-[1.42rem] lg:-translate-x-0 ml-[15%] lg:ml-0 ring-[6px] lg:ring-8'
+                      : 'w-8 lg:w-[5rem] h-8 lg:h-[5rem] -translate-x-[0.4rem] ml-[15%] lg:ml-10 lg:mx-10'
                   } ${
                     index === selectEvent
                       ? index % 2 === 0
-                        ? 'lg:ml-6'
+                        ? 'lg:ml-7'
                         : 'lg:mr-6'
                       : null
                   } rounded-[50%] z-10 transition-all duration-700 cursor-pointer ring-customAccent bg-customLightPink`}
