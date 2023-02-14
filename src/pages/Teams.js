@@ -20,7 +20,7 @@ const Teams = forwardRef(function Teams(props, ref) {
   });
 
   const handleScroll = (element) => {
-    const horizontal = element.target.offsetLeft - 164;
+    const horizontal = element.target.offsetLeft - (window.innerWidth / 2 - 24);
     teamsRef.current.scroll(horizontal, 0);
   };
 
