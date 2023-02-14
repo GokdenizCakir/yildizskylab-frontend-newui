@@ -50,7 +50,10 @@ const Events = forwardRef(function Events(props, ref) {
                     : 'flex-row-reverse'
                 } justify-end`}
               >
-                <div className=' w-7/12 ml-2 lg:ml-8 lg:w-[20rem]'>
+                <div
+                  onClick={() => setSelectEvent(index)}
+                  className=' w-7/12 ml-2 lg:ml-8 lg:w-[20rem]'
+                >
                   <div className='flex flex-row-reverse lg:flex-row justify-center text-lg lg:text-3xl'>
                     <span className='text-customLightPurple ml-2 lg:mr-6'>
                       {event.date}

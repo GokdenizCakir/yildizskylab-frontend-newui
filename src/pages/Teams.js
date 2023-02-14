@@ -18,6 +18,10 @@ const Teams = forwardRef(function Teams(props, ref) {
     };
   });
 
+  const handleScroll = (event) => {
+    event.target.scrollIntoView({ inline: 'center', behavior: 'smooth' });
+  };
+
   const [teamSelect, setTeamSelect] = useState('arge');
   const [teamIndex, setTeamIndex] = useState(0);
   const [selectedTeam, setSelectedTeam] = useState('algolab');
@@ -67,9 +71,11 @@ const Teams = forwardRef(function Teams(props, ref) {
                   className='flex flex-col justify-center lg:justify-between items-center space-y-10'
                 >
                   <div
-                    onClick={() => {
+                    key={index}
+                    onClick={(e) => {
                       setTeamIndex(index);
                       setSelectedTeam(team.name);
+                      handleScroll(e);
                     }}
                     className={`w-16 lg:min-w-[5.2rem] h-16 lg:min-h-[5.2rem] flex justify-center items-center ring-customAccent ${
                       teamIndex === index ? 'ring-8' : null
