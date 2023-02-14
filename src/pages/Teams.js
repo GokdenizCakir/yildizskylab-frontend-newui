@@ -28,7 +28,7 @@ const Teams = forwardRef(function Teams(props, ref) {
       ref={pageRef}
     >
       <div className=' text-customLightPink text-xl tracking-wide lg:text-2xl my-10 lg:my-16 flex justify-center'>
-        <div className='flex justify-between w-auto items-center'>
+        <div className='flex ml-3 justify-between w-auto items-center'>
           <div
             onClick={() => {
               setTeamSelect('arge');
@@ -58,13 +58,13 @@ const Teams = forwardRef(function Teams(props, ref) {
         </div>
       </div>
       <div>
-        <div className='h-[150px] lg:h-50 flex justify-start lg:justify-center pl-10 pr-10 lg:pl-0 w-screen overflow-x-scroll lg:overflow-x-visible space-x-12'>
+        <div className='h-[150px] lg:h-50 flex justify-start lg:justify-center pl-[calc(50%-2rem)] pr-[calc(50%-2rem)] lg:pr-0 lg:pl-0 w-screen overflow-x-scroll lg:overflow-x-visible space-x-12'>
           {(teamSelect === 'arge' ? teams.arge : teams.social).map(
             (team, index) => {
               return (
                 <div
                   key={index}
-                  className='flex flex-col justify-center lg:justify-between items-center space-y-8'
+                  className='flex flex-col justify-center lg:justify-between items-center space-y-10'
                 >
                   <div
                     onClick={() => {
@@ -81,7 +81,7 @@ const Teams = forwardRef(function Teams(props, ref) {
                       alt='logo'
                     />
                   </div>
-                  <div className='text-customLightPink text-xs lg:text-lg text-end w-10 -rotate-45 '>
+                  <div className='text-customLightPink mr-10 h-0 text-xs lg:text-lg text-end w-0 -rotate-45 '>
                     {team.name}
                   </div>
                 </div>
