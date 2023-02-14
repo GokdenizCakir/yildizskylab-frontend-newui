@@ -66,7 +66,7 @@ const Teams = forwardRef(function Teams(props, ref) {
       <div>
         <div
           ref={teamsRef}
-          className='h-[150px] lg:h-50 flex justify-start lg:justify-center pl-[calc(50%-2rem)] pr-[calc(50%-2rem)] lg:pr-0 lg:pl-0 w-screen overflow-x-scroll lg:overflow-x-visible space-x-12'
+          className='h-[150px] lg:h-50 scroll-smooth flex justify-start lg:justify-center pl-[calc(50%-2rem)] pr-[calc(50%-2rem)] lg:pr-0 lg:pl-0 w-screen overflow-x-scroll lg:overflow-x-visible space-x-12'
         >
           {(teamSelect === 'arge' ? teams.arge : teams.social).map(
             (team, index) => {
