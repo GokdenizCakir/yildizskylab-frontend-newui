@@ -1,15 +1,30 @@
 import React, {
   forwardRef,
+  useEffect,
   useImperativeHandle,
   useRef,
   useState,
 } from 'react';
+import axios from 'axios';
 import teams from './../data/teams.json';
 import DownArrow from '../components/DownArrow';
 
 const Teams = forwardRef(function Teams(props, ref) {
+  const [teamData, setTeamData] = useState([]);
   const pageRef = useRef(null);
   const teamsRef = useRef(null);
+
+  const fetchData = async () => {
+    const res = await axios.get(
+      'https://yildizskylab-backend.onrender.com/teams'
+    );
+    setTeamData(res.data);
+    console.log(teamData);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   useImperativeHandle(ref, () => {
     return {
@@ -20,8 +35,13 @@ const Teams = forwardRef(function Teams(props, ref) {
   });
 
   const handleScroll = (element) => {
-    const horizontal = element.target.offsetLeft - (window.innerWidth / 2 - 24);
-    teamsRef.current.scroll(horizontal, 0);
+    if (element) {
+      const horizontal =
+        element.target.offsetLeft - (window.innerWidth / 2 - 24);
+      teamsRef.current.scroll(horizontal, 0);
+    } else {
+      teamsRef.current.scroll(0, 0);
+    }
   };
 
   const [teamSelect, setTeamSelect] = useState('arge');
@@ -40,6 +60,7 @@ const Teams = forwardRef(function Teams(props, ref) {
               setTeamSelect('arge');
               setTeamIndex(0);
               setSelectedTeam('algolab');
+              handleScroll();
             }}
             className={`px-3 pt-[0.2rem] pb-[0.1rem] cursor-pointer leading-tight ${
               teamSelect === 'arge' ? 'bg-customAccent' : 'bg-customDarkPurple'
@@ -52,6 +73,7 @@ const Teams = forwardRef(function Teams(props, ref) {
               setTeamSelect('social');
               setTeamIndex(0);
               setSelectedTeam('organizasyon');
+              handleScroll();
             }}
             className={`px-3 pt-[0.2rem] py-[0.1rem] cursor-pointer ${
               teamSelect === 'social'
