@@ -25,6 +25,7 @@ const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
           } p-2 pb-3 transition-all duration-300 rounded-md cursor-pointer lg:hidden absolute`}
         >
           <svg
+            className='overflow-visible'
             width='28'
             height='16'
             viewBox='0 0 28 16'
@@ -32,6 +33,9 @@ const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
             xmlns='http://www.w3.org/2000/svg'
           >
             <line
+              className={`${
+                menuOpened ? 'rotate-45 -translate-y-[0.3rem]' : null
+              } origin-left duration-500 transition-all`}
               y1='1'
               x2='28'
               y2='1'
@@ -39,6 +43,9 @@ const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
               strokeWidth='2'
             />
             <line
+              className={`${
+                menuOpened ? 'opacity-0' : null
+              } duration-300 transition-all`}
               y1='8'
               x2='28'
               y2='8'
@@ -46,6 +53,9 @@ const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
               strokeWidth='2'
             />
             <line
+              className={`${
+                menuOpened ? '-rotate-45 translate-y-[0.3rem]' : null
+              } origin-left duration-500 transition-all`}
               y1='15'
               x2='28'
               y2='15'
