@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Logo from '../assets/SkylabPinkLogo.png';
+import Logo from '../assets/skylab_logo.png';
 import smoothscroll from 'smoothscroll-polyfill';
 import { menuState } from '../states/atom';
 import { useRecoilState } from 'recoil';
@@ -74,7 +74,7 @@ const Nav = ({ refs: { landingRef, teamsRef, eventsRef, contactRef } }) => {
         <div className='w-9 h-9 lg:w-10 lg:h-10'>
           <img src={Logo} alt='' />
         </div>
-        <div className='hidden lg:flex w-2 h-2 rounded-full bg-customLightPink'></div>
+        <div className='hidden lg:flex w-2 h-2 mb-[0.4rem] rounded-full bg-customLightPink'></div>
         <div className=''>
           <span className='font-bebasNeue text-3xl lg:text-5xl tracking-[0.3em] font-light'>
             Sky Lab
