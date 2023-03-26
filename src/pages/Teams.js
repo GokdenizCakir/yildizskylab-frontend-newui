@@ -50,7 +50,7 @@ const Teams = forwardRef(function Teams(props, ref) {
 
   return (
     <section
-      className='h-screen snap-start relative pt-24 lg:pt-36 bg-customDarkPurple white'
+      className='h-[100dvh] snap-start relative pt-24 lg:pt-36 bg-customDarkPurple white'
       ref={pageRef}
     >
       <div className=' text-customLightPink text-xl tracking-wide lg:text-2xl my-10 lg:my-16 flex justify-center'>

@@ -16,8 +16,8 @@ function App() {
     <div className='App'>
       <div className='font-bebasNeue relative bg-customDarkPurple flex flex-row justify-center text-customLightPink tracking-[0.16em]'>
         <Nav refs={{ landingRef, teamsRef, eventsRef, contactRef }} />
-        <div className=' h-screen overflow-y-scroll scroll-smooth snap-proximity snap-y justify-center w-full'>
-          <Menu refs={{ landingRef, teamsRef, eventsRef, contactRef }}/>
+        <div className=' h-[100dvh] overflow-y-scroll scroll-smooth snap-proximity snap-y justify-center w-full'>
+          <Menu refs={{ landingRef, teamsRef, eventsRef, contactRef }} />
           <LandingPage ref={landingRef} />
           <Teams ref={teamsRef} />
           <Events ref={eventsRef} />

@@ -46,7 +46,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 
   return (
     <section
-      className='h-screen w-screen snap-start pt-28 lg:pt-36 bg-customDarkPurple'
+      className='h-[100dvh] w-screen snap-start pt-28 lg:pt-36 bg-customDarkPurple'
       ref={pageRef}
     >
       <div className='flex flex-col items-center mt-4 mx-auto w-10/12 lg:w-[32rem]'>
@@ -61,7 +61,6 @@ const Contact = forwardRef(function Contact(props, ref) {
             name='fullname'
             type='text'
             placeholder='İsim Soyisim'
-          
           />
           <input
             onChange={(e) => handleChange(e)}

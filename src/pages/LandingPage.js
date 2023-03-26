@@ -19,7 +19,7 @@ const LandingPage = forwardRef(function LandingPage(props, ref) {
 
 	return (
 		<div
-			className='h-screen snap-start pt-36  bg-cover bg-[0%] flex justify-center items-center  overflow-hidden relative'
+			className='h-[100dvh] snap-start pt-36  bg-cover bg-[0%] flex justify-center items-center  overflow-hidden relative'
 			ref={pageRef}
 		>
 			<img
